@@ -1,5 +1,4 @@
 body { 
-    padding-top: 20px;
     font-family: "Open sans";
     background-color: rgb(40, 39, 39);
     color: rgb(247, 247, 247);
@@ -7,6 +6,7 @@ body {
 
 #aboutme, #languageskills, #portfolio, #contactme, #jobexperience {
     height: 100vh;
+    padding-top: 150px;
 }
 
 #tplogo, #aglogo {
@@ -18,15 +18,36 @@ body {
     color: white;
 }
 
+#backgroundfoto {
+    position: absolute;
+    width: 100vh;
+    height: auto;
+}
+
+
 .info {
-    background: -webkit-linear-gradient(rgb(143, 139, 139), rgb(204, 56, 201));
+    text-align: justify;
+    text-justify: inter-word;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(165, 20, 163));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .card-img-top {
     height: 380px;
     width: 400px;
+}
+
+.botinfo {
+    position: absolute;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .job {
