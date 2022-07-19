@@ -1,0 +1,97 @@
+html {
+    height: 100%;
+}
+
+body { 
+    padding-top: 65px;
+    font-family: "Open sans";
+    background-color: rgb(40, 39, 39);
+    color: rgb(247, 247, 247);
+    height: 100%;
+}
+
+#tplogo, #aglogo {
+    height: 40px;
+    width: 40px;
+}
+
+
+#aboutme, #portfolio, #contactme, #jobexperience{
+    height: 100%;
+    width: 100%;
+}
+
+#logos {
+    color: white;
+}
+
+.info {
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(204, 56, 201));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-img-top {
+    height: 380px;
+    width: 400px;
+}
+
+.facefoto {
+    border-radius: 70%;
+    height: 400px;
+    width: 300px;
+}
+
+.pythongradient {
+    background: -webkit-linear-gradient(rgb(75, 139, 190), rgb(255, 212, 59));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.htmlcssgradient {
+    background: -webkit-linear-gradient(rgb(38, 77, 228) , rgb(227, 76, 38));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.job {
+    font-size: 40px;
+}
+
+.jobinfo {
+    font-size: 20px;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: rgb(247, 247, 247);
+}
+a {
+    color: white;
+}
+
+.bg-purple {
+    background-color: rgb(220, 173, 215);
+}
+
+.bg-darkpurple {
+    background-color: rgb(202, 46, 207);
+}
+
+.btn-purple{
+    background-color: rgb(165, 24, 165);
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+   color: white;
+}
+
+.card {
+    background-color: rgb(40, 39, 39);
+    color: white;
+}
