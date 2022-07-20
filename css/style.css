@@ -90,6 +90,9 @@ body {
             margin-right: auto;}
     .job{font-size: 16px;}
     .jobinfo {font-size: 14px;}
+    #aboutme, #languageskills, #portfolio, #contactme, #jobexperience {
+    padding-top: 50px;
+    }
 }
 
 
