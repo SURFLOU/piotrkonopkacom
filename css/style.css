@@ -25,13 +25,11 @@ body {
 
 
 .info {
-    text-align: justify;
-    text-justify: inter-word;
     background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(165, 20, 163));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .card-img-top {
@@ -64,20 +62,20 @@ body {
                   display: block;
                   margin-left: auto;
               margin-right: auto;}
-    .job {font-size: 25px;}
-    .jobinfo {font-size: 20px;}
+    .job {font-size: 23px;}
+    .jobinfo {font-size: 19px;}
 
  } 
 
 
-@media (max-width: 744px) {  
+@media (max-width: 700px) {  
     .card-img-top {height: 70px;
                    width: 80px;
                    display: block;
                    margin-left: auto;
                margin-right: auto;}
-    .job {font-size: 18px;}
-    .jobinfo {font-size: 15px;} 
+    .job {font-size: 22px;}
+    .jobinfo {font-size: 20px;} 
 
   } 
 
@@ -87,11 +85,21 @@ body {
                     display: block;
                 margin-left: auto;
             margin-right: auto;}
-    .job{font-size: 16px;}
-    .jobinfo {font-size: 14px;}
+    .job{font-size: 21px;}
+    .jobinfo {font-size: 18px;}
     #aboutme, #languageskills, #portfolio, #contactme, #jobexperience {
-    padding-top: 20px;
+    padding-top: 10px;
     }
+}
+
+@media (max-width: 400px) {
+    .job{font-size: 19px;}
+    .jobinfo {font-size: 16px}
+}
+
+@media (max-width: 310px) {
+    .job{font-size: 15px;}
+    .jobinfo {font-size: 13px}
 }
 
 
