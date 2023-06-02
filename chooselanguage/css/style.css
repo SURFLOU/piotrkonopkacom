@@ -1,0 +1,134 @@
+body {
+  font-family: "Open sans";
+  background-color: rgb(40, 39, 39);
+  color: rgb(247, 247, 247);
+  }
+  
+  .container {
+    margin: 50px auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh; /* 100% of viewport height */
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .form {
+    background-color: rgb(40, 39, 39);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    height: auto;
+  }
+
+  .results {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    height: auto;
+  }
+  
+  .checkboxes {
+    margin-bottom: 20px;
+  }
+  
+  .language {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    background: linear-gradient(to right, rgb(173, 61, 196), rgb(165, 20, 163));
+    border: 2px solid #000;
+    transition: all 0.2s ease;
+  }
+  
+  .language:hover {
+    background-color: #fff;
+    color: #000000;
+  }
+  
+  .language input[type="checkbox"] {
+    display: none;
+  }
+  
+  .language input[type="checkbox"] + label {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .language input[type="checkbox"]:checked + label {
+    background-color: #000;
+    color: #fff;
+    display: block;
+    box-shadow: 0 0 0 10px #000;
+  }
+  
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  
+  button {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+    transition: all 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor:pointer;
+  }
+  
+  #result, #hours, #offers, #family, #similarities, #phonemes {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+
+
+  .factors {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .factor {
+    position: relative;
+    display: block;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    transition: all 0.2s ease;
+  }
+  
+  .factor:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .dragging {
+    opacity: 0.5;
+    z-index: 9999;
+  }
+  
+  .ui-droppable-hover {
+    border: 2px solid #000;
+  }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Language Selector</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href=".\css\style.css">
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css" />
+</head>
+</head>
+<body>
+	<body>
+        <div class="container">
+            <h1>Select your fluent languages</h1>
+            <div class="form">
+                <div class="checkboxes">
+                    <div class="language">
+                        <input type="checkbox" id="polish" name="languages" value="polish">
+                        <label for="polish">Polish</label>
+                    </div>
+                    <div class="language">
+                        <input type="checkbox" id="english" name="languages" value="english">
+                        <label for="english">English</label>
+                    </div>
+                    <div class="language">
+                        <input type="checkbox" id="german" name="languages" value="german">
+                        <label for="german">German</label>
+                    </div>
+                    <div class="language">
+                        <input type="checkbox" id="spanish" name="languages" value="spanish">
+                        <label for="spanish">Spanish</label>
+                    </div>
+
+                    <div class="language">
+                        <input type="checkbox" id="russian" name="languages" value="russian">
+                        <label for="russian">Russian</label>
+                    </div>
+
+                    <div class="language">
+                        <input type="checkbox" id="dutch" name="languages" value="dutch">
+                        <label for="dutch">Dutch</label>
+                    </div>
+
+                    <div class="language">
+                        <input type="checkbox" id="danish" name="languages" value="danish">
+                        <label for="danish">Danish</label>
+                    </div>
+
+                    <div class="language">
+                        <input type="checkbox" id="norwegian" name="languages" value="norwegian">
+                        <label for="norwegian">Norwegian</label>
+                    </div>
+
+                    <div class="language">
+                        <input type="checkbox" id="swedish" name="languages" value="swedish">
+                        <label for="swedish">Swedish</label>
+                    </div>
+
+                    <div class="language">
+                        <input type="checkbox" id="portuguese" name="languages" value="portuguese">
+                        <label for="portuguese">Portuguese</label>
+                    </div>
+
+                    <div class="language">
+                        <input type="checkbox" id="french" name="languages" value="french">
+                        <label for="french">French</label>
+                    </div>
+
+                    <div class="language">
+                        <input type="checkbox" id="italian" name="languages" value="italian">
+                        <label for="italian">Italian</label>
+                    </div>
+                </div>
+                <div id="factor-container">
+                    <div class="factor" data-id="1">Podobieństwo językowe</div>
+                    <div class="factor" data-id="2">Łatwość wymowy</div>
+                    <div class="factor" data-id="3">Rodzina językowa</div>
+                    <div class="factor" data-id="4">Trudność języka gramatyczna</div>
+                    <div class="factor" data-id="5">Liczba native speakerów</div>
+                    <div class="factor" data-id="6">Ilość ofert pracy</div>
+                  </div>
+                <br>
+                <button id="submit">Submit</button>
+            </div> 
+            <!-- # wages_list = [similarity, pronunciation, family, difficulty, number of speakers, job offers] -->
+        </div>
+        <div class="container results" id="results">
+                <div id="result"></div>
+                <div id="hours"></div>
+                <div id="family"></div>
+                <div id="offers"></div>
+                <div id="similarities"></div>
+                <div id="phonemes"></div>
+            </div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js"></script>
+	<script src=".\js\script.js"></script>
+    <script>
+        // Get container element and initialize Dragula
+        var container = document.getElementById("factor-container");
+        var drake = dragula([container], {
+          direction: "vertical"
+        });
+      
+        // Listen for "drop" event to rearrange factors
+        drake.on("drop", function(el, target, source, sibling) {
+          // Get current factor order
+          var factors = Array.from(container.querySelectorAll(".factor"));
+      
+          // Get new factor order after drag and drop
+          var newFactors = factors.map(function(factor) {
+            return factor.dataset.id;
+          });
+      
+          // Do something with new factor order
+          console.log(newFactors);
+        });
+      </script>
+</body>
+</html>
